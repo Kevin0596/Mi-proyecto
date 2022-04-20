@@ -1,0 +1,1062 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+
+body {
+
+    background-image: url(/multimedia/imag/sss.jfif);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*/ -------------------------INDEX--------------------- /*/
+
+.contenedor {
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+        "contenido contenido sidebar"
+        "widget-1 widget-2 sidebar"
+        "footer footer footer"
+    ;
+}
+
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+.contenedor .header {
+    background-image: url(/multimedia/imag/sss.jfif);
+    color: black;
+    grid-area: header;
+    margin: 0px;
+
+
+
+}
+
+.contenedor .tittle {
+    font-size: 35px;
+    text-align: center;
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+}
+
+.contenedor .sidebar {
+
+    grid-column: 3 / 4;
+    background-color: rgba(223, 222, 222, 0.237);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background-color: rgba(236, 127, 255, 0.01);
+    color: aliceblue;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+    background-color: rgba(249, 249, 249, 0.23);
+}
+
+.contenedor .widget-2 {
+    grid-area: widget-2;
+    background-color: rgba(193, 193, 193, 0.377);
+}
+
+.contenedor .footer {
+
+    background-color: black;
+    color: azure;
+    grid-area: footer;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: right;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(1, 3, 4);
+    width: max-content;
+
+}
+
+li a.active,
+li a:hover {
+
+    background-color: #ed5b86;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.contenedor .toogle {
+    background: none;
+    border: none;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 35px;
+    display: none;
+
+}
+
+.banner {
+    width: 600px;
+    height: 700px;
+}
+
+
+
+.segundo {
+    font-size: 35px;
+    margin: 15px;
+    background-color: #ed5b8766;
+    text-align: center;
+}
+
+.desco {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.dren {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
+
+}
+
+.faci {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.reiki {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
+}
+
+h4 {
+    background-color: rgba(137, 43, 226, 0.326);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.contenido {
+    background-image: url(/multimedia/imag/ff.jpg)
+}
+
+.cam {
+    width: 350px;
+    height: 132px;
+}
+
+/*/--------------------FOOTER------------ /*/
+
+.icono1 {
+    width: 35px;
+    height: 30px;
+
+
+}
+
+.icono2 {
+    width: 45px;
+    height: 35px;
+}
+
+.icono3 {
+    width: 35px;
+    height: 30px;
+
+}
+
+.icono4 {
+    width: 35px;
+    height: 30px;
+}
+
+.redes-sociales {
+    font-size: 18px;
+    display: flex;
+    color: azure;
+    justify-content: center;
+    margin: 20px;
+    padding: 25px;
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 40px;
+    color: azure;
+
+
+}
+
+.pie {
+
+    background-color: black;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/*/-----------------GALERIA----------------- /*/
+
+.contenedora {
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header header"
+        "contenidos contenidos sidebare sidebare"
+        "widget-3 widget-4 sidebare sidebare"
+        "footers footers footers footers"
+    ;
+}
+
+.contenedora>div,
+.contenedora .header,
+.contenedora .contenidos,
+.contenedora .sidebare,
+.contenedora .footers {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+.contenedora .header {
+    background-image: url(/multimedia/imag/sss.jfif);
+    color: black;
+    grid-area: header;
+    margin: 0px;
+
+
+
+}
+
+.contenedora .tittle {
+    font-size: 35px;
+    text-align: center;
+}
+
+.contenedora .contenidos {
+    grid-area: contenidos;
+}
+
+.contenedora .sidebare {
+
+    grid-column: 3 / 4;
+    background-image: url(/multimedia/imag/ff.jpg);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebare;
+
+}
+
+.contenedora .widget-3,
+.contenedora .widget-4 {
+    background-color: rgb(230, 221, 231);
+    color: aliceblue;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedora .widget-3 {
+    grid-area: widget-3;
+    background-color: rgba(215, 215, 215, 0.377);
+}
+
+.contenedora .widget-4 {
+    grid-area: widget-4;
+    background-color: rgba(214, 208, 212, 0.079);
+}
+
+.contenedora .footers {
+
+    background-color: black;
+    color: azure;
+    grid-area: footers;
+
+}
+
+.video {
+    padding-left: 55px;
+    width: 500px;
+    height: 250px;
+    margin: 10px
+}
+
+.tooglee {
+    background: none;
+    border: none;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 35px;
+    display: none;
+
+}
+
+.contenidos {
+    background-image: url(/multimedia/imag/ff.jpg);
+}
+
+.tit {
+    text-align: center;
+    background-color: #d1e400ab
+}
+
+.imagenes {
+    width: 320px;
+    height: 150px;
+
+}
+
+.imagene {
+    width: 400px;
+    height: 150px;
+}
+
+
+/*/-----------------------Servicios-------------------------------*/
+
+
+
+.servicio {
+    background: url(../multimedia/imag/sss.jfif);
+
+}
+
+.tabla {
+    border: #000000 5px solid;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    margin: 25px;
+    justify-content: center;
+    margin-left: 20%;
+
+
+}
+
+.tip {
+    text-align: center;
+    background-color: #da00e65b;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.servi {
+    font-size: 30px;
+    list-style: none;
+    border: #000000 solid 4px;
+    margin: 30px;
+    background-color: azure;
+}
+
+.item {
+    font-size: 30px;
+    border: #000000 solid 6px;
+    background-color: #ed5b86;
+}
+
+.horarios {
+    color: #000000;
+    font-size: 30px;
+    background-color: #ed5b876a;
+    text-align: center;
+}
+
+.ser {
+    color: whitesmoke;
+}
+
+.copias {
+    color: azure
+}
+
+
+/*/---------------------Ubicacion---------------------- /*/
+
+
+.ubicacions {
+
+    background: url(../multimedia/imag/ff.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.tittle-tres {
+    text-align: center;
+    color: azure;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 0px;
+    background-color: #ed5b86;
+}
+
+iframe {
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+    background: url(../multimedia/imag/ff.jpg);
+    text-align: center;
+
+}
+
+.dire {
+    font-size: 25px;
+    color: azure;
+    text-align: center;
+    background-color: #ed5b8784;
+}
+
+/*/-----------------------CONTACTO--------------------------- /*/
+
+.contes {
+    text-align: center;
+    font-size: 55px;
+    color: #e40000ab;
+}
+
+fieldset {
+    border: 5px solid black;
+    background-color: #F7E2E2;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.area {
+    width: 700px;
+    height: 300px;
+}
+
+legend {
+    font-size: 35px;
+    color: rgb(0, 1, 1);
+}
+
+.formu {
+    padding: 10px;
+}
+
+input {
+    font-size: 22px;
+    margin-bottom: 15px;
+
+}
+
+.relleno {
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.456);
+    padding: 10px;
+    margin: 0px;
+}
+
+select {
+    font-size: 20px;
+    border-radius: 29px;
+    border-color: black;
+}
+
+.aceptar {
+    font-size: 15px;
+}
+
+.detalles {
+    color: black;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 328px) {
+
+    body {
+        background-image: url(/multimedia/imag/ff.jpg);
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    /*/-----------------INDEX MEDIA-----------/*/
+    .contenedor {
+
+        grid-template-areas: "header header"
+            "contenido contendio"
+            "sidebar sidebar"
+            "widget-1 widget-1"
+            "widget-2 widget-2"
+            "footer footer"
+        ;
+        background-image: url(/multimedia/imag/ff.jpg);
+    }
+
+    .header {
+        height: 90px;
+        color: aliceblue;
+
+    }
+
+
+    nav {
+        justify-content: right;
+        color: aliceblue;
+    }
+
+    nav ul li {
+        line-height: 80px;
+        margin: 0 5px;
+
+    }
+
+    nav ul li a {
+        font-size: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: aliceblue;
+
+    }
+
+    .contenedor .toogle {
+        background: none;
+        border: none;
+        line-height: 60px;
+        padding: 0 20px;
+        font-size: 35px;
+        display: none;
+
+
+    }
+
+    .contenedor .tittle {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contenedor .header {
+        background-image: url(/multimedia/imag/ff.jpg);
+        color: black;
+        grid-area: header;
+        margin: 0px;
+    }
+
+    .contenedor .contenido {
+        grid-area: contenido;
+        padding-left: 10px;
+        margin: 40px;
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 80%;
+
+    }
+
+
+
+    .segundo {
+        font-size: 25px;
+        margin: 15px;
+        background-color: #ea07b987;
+        text-align: center;
+    }
+
+    .desco {
+        font-size: 15px;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    .dren {
+        font-size: 15px;
+        margin: 10px;
+        font-weight: 700;
+
+    }
+
+    .faci {
+        font-size: 15px;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    .reiki {
+        font-size: 15px;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    h4 {
+        background-color: rgba(226, 220, 43, 0.74);
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .contenido {
+        background-image: url(/multimedia/imag/sss.jfif);
+        
+    }
+
+
+    .contenedor .sidebar {
+
+        grid-column: 3 / 4;
+        background-color: rgba(165, 42, 42, 0.237);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        grid-area: sidebar;
+
+    }
+
+    .cam {
+        width: 80%;
+
+    }
+
+    .icono1 {
+        width: 25px;
+        height: 15px;
+        margin: 5px;
+
+    }
+
+    .icono2 {
+        width: 25px;
+        height: 15px;
+        margin: 5px;
+    }
+
+    .icono3 {
+        width: 25px;
+        height: 15px;
+        margin: 5px;
+
+    }
+
+    .icono4 {
+        width: 25px;
+        height: 15px;
+        margin: 5px;
+    }
+
+    .copi {
+        font-size: 8px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .redes-sociales {
+        font-size: 12px;
+        flex-direction: column;
+        color: azure;
+        justify-content: center;
+        margin: 20px;
+        padding: 25px;
+        list-style: none;
+    }
+
+    footer a {
+        text-decoration: none;
+        margin: 40px;
+        color: azure;
+
+
+
+    }
+
+    .pie {
+
+        background-color: black;
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        w
+
+    }
+
+
+
+    /*/-----------Galeria-----------/*/
+
+
+
+    .contenedora {
+
+        grid-template-areas: " header header"
+
+            "contenidos contendios"
+            "sidebare sidebare"
+            "widget-3 widget-3"
+            "widget-4 widget-4"
+            "footers footers"
+        ;
+        background-image: url(/multimedia/imag/ff.jpg);
+    }
+
+    .contenedora>div,
+    .contenedora .header,
+    .contenedora .contenidos,
+    .contenedora .sidebare,
+    .contenedora .footers {
+        background-color: azure;
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+
+    .contenedora .header {
+        background-image: url(/multimedia/imag/ff.jpg);
+        color: black;
+        grid-area: header;
+        margin: 0px;
+        flex-direction: column;
+        display: flex;
+        font-size: 5px;
+
+
+    }
+
+
+
+    .contenedora .tittle {
+        font-size: 15px;
+
+    }
+
+    .contenedora .contenidos {
+        grid-area: contenidos;
+    }
+
+    .contenedora .sidebare {
+
+        grid-column: 3 / 4;
+        background-image: url(/multimedia/imag/ff.jpg);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        grid-area: sidebare;
+
+    }
+
+    .contenedora .widget-3,
+    .contenedora .widget-4 {
+        background-color: rgb(230, 221, 231);
+        color: aliceblue;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedora .widget-3 {
+        grid-area: widget-3;
+        background-color: rgba(215, 215, 215, 0.377);
+    }
+
+    .contenedora .widget-4 {
+        grid-area: widget-4;
+        background-color: rgba(214, 208, 212, 0.079);
+    }
+
+    .contenedora .footers {
+
+        background-color: black;
+        color: azure;
+        grid-area: footers;
+
+
+    }
+
+    .video {
+
+        width: 210px;
+        margin: 10px;
+
+    }
+
+    .tooglee {
+        background: none;
+        border: none;
+        line-height: 60px;
+        font-size: 35px;
+        display: none;
+
+    }
+
+    .contenidos {
+        margin-top: 25px;
+    }
+
+    .tit {
+        text-align: center;
+        background-color: #d1e400ab
+    }
+
+    .imagenes {
+        width: 100%;
+
+
+    }
+
+    .imagene {
+        width: 100%;
+
+    }
+
+    .tit {
+        text-align: center;
+        background-color: rgba(3, 116, 215, 0.515);
+
+        font-size: 15px;
+
+    }
+
+
+    /*/----------------------SERVICIOS MQ---------------------------- /*/
+
+    .servicio {
+        background-image: url(/multimedia/imag/ff.jpg);
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 7px 13px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: rgb(1, 3, 4);
+        width: max-content;
+
+    }
+
+    .tabla {
+        border: #000000 5px solid;
+        text-align: center;
+        width: 300px;
+        height: 500px;
+        margin: 25px;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    .tip {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .servi {
+        font-size: 10px;
+        list-style: none;
+        border: #000000 solid 4px;
+        margin: 30px;
+        background-color: azure;
+    }
+
+    .item {
+        font-size: 10px;
+        border: #000000 solid 6px;
+        background-color: #ed5b86;
+    }
+
+    .horarios {
+        color: #000000;
+        font-size: 15px;
+        background-color: #ed5b876a;
+        text-align: center;
+
+    }
+
+    .ser {
+        color: whitesmoke;
+    }
+
+    .copias {
+        color: azure
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    /*/----------------------------------UBICACION MQ-------------------------------------------/*/
+
+
+
+
+
+    .ubicacions {
+        background: url(../multimedia/imag/imagem.jpg);
+
+    }
+
+    .tittle-tres {
+        text-align: center;
+        color: azure;
+        font-size: 15px;
+        line-height: 50px;
+        background-color: #9700ceab;
+    }
+
+
+
+    .dire {
+        font-size: 15px;
+        color: azure;
+        text-align: center;
+        background-color: #ed5b8784;
+    }
+
+
+
+    iframe {
+        width: 70%;
+        background: url(../multimedia/imag/imagem.jpg);
+
+
+
+
+    }
+
+    /*/--------------------------CONTACTO MQ-----------------------------/*/
+
+    .contes {
+        font-size: 10px;
+    }
+
+    .area {
+        width: 150px;
+        height: 100px;
+    }
+
+    fieldset {
+        border: 5px solid black;
+        background-color: #F7E2E2;
+        text-align: center;
+
+
+    }
+
+    .aceptar {
+        font-size: 5px;
+    }
+
+    .dudas {
+        font-size: 10px;
+    }
+
+    legend {
+        font-size: 10px;
+        color: rgb(0, 1, 1);
+    }
+
+
+
+    input {
+        font-size: 8px;
+        margin-bottom: 1px;
+
+    }
+
+    .relleno {
+        font-size: 8px;
+        border-radius: 8px;
+        border-color: rgba(0, 0, 0, 0.456);
+        padding: 10px;
+        margin: 0px;
+    }
+
+    select {
+        font-size: 8px;
+        border-radius: 5px;
+        border-color: black;
+    }
+
+    .aceptar {
+        font-size: 15px;
+    }
+
+    .detalles {
+        color: black;
+        font-size: 10px;
+    }
+
+
+
+
+}
