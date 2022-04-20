@@ -377,7 +377,7 @@ footer a {
 
 
 .servicio {
-    background: url(../multimedia/imag/sss.jfif);
+background-image: url(/multimedia/imag/sss.jfif);
 
 }
 
@@ -395,10 +395,15 @@ footer a {
 
 .tip {
     text-align: center;
-    background-color: #da00e65b;
-    font-size: 35px;
+    background-image: linear-gradient(#a770ef, #cf8bf3,#fdb99b);
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
+    animation-name: tip;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 6ss;
+
 }
 
 .servi {
@@ -407,12 +412,20 @@ footer a {
     border: #000000 solid 4px;
     margin: 30px;
     background-color: azure;
+    animation-name: servi;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
 .item {
     font-size: 30px;
     border: #000000 solid 6px;
     background-color: #ed5b86;
+    animation-name: item;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
 .horarios {
@@ -428,6 +441,36 @@ footer a {
 
 .copias {
     color: azure
+}
+
+/*/-----------ANIMATION SERVICIO-----------/*/
+
+@keyframes tip {
+0%{
+    color: #000000;
+    font-size: 40px;
+}
+50%{
+    color:#f20a0a ;
+    background-image: linear-gradient( #a1ffce, #faffd1);
+}
+
+}
+
+@keyframes servi {
+    0%{
+        background-image:url(/multimedia/imag/imagem.jpg)
+    }
+    
+}
+
+@keyframes item {
+    25%{
+        background-color: #a1ffce68;
+        font-size: 56px;
+    }
+    
+    
 }
 
 
@@ -660,7 +703,7 @@ select {
 
     .contenido {
         background-image: url(/multimedia/imag/sss.jfif);
-        
+
     }
 
 
@@ -743,9 +786,8 @@ select {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        w
-
-    }
+        
+        }
 
 
 
@@ -755,8 +797,8 @@ select {
 
     .contenedora {
 
-        grid-template-areas: " header header"
-
+        grid-template-areas: 
+            "header header"
             "contenidos contendios"
             "sidebare sidebare"
             "widget-3 widget-3"
