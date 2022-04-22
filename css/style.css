@@ -17,7 +17,6 @@ body {
 .contenedor {
 
     display: grid;
-    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "header header header"
@@ -65,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
+    min-height: 100%;
     grid-area: sidebar;
 
 }
@@ -74,7 +73,7 @@ body {
 .contenedor .widget-2 {
     background-color: rgba(236, 127, 255, 0.01);
     color: aliceblue;
-    height: 100px;
+    height: 90%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -141,8 +140,8 @@ li a:hover {
 }
 
 .banner {
-    width: 600px;
-    height: 700px;
+    width: 100%;
+    
 }
 
 
@@ -601,7 +600,7 @@ select {
     }
 
     .header {
-        height: 90px;
+        height: 90%;
         color: aliceblue;
 
     }
@@ -771,7 +770,7 @@ select {
 
     footer a {
         text-decoration: none;
-        margin: 40px;
+        margin: 1%;
         color: azure;
 
 
@@ -786,7 +785,7 @@ select {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        
+        width: 90%;
         }
 
 
@@ -992,9 +991,7 @@ select {
         color: azure
     }
 
-    .footer {
-        width: 100%;
-    }
+    
 
     /*/----------------------------------UBICACION MQ-------------------------------------------/*/
 
